@@ -1,0 +1,251 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/cannonBall.png",
+                "type": "image",
+                "key": "cannonBall"
+            },
+            {
+                "url": "assets/cannonLoose.png",
+                "type": "image",
+                "key": "cannonLoose"
+            },
+            {
+                "url": "assets/crate_03.png",
+                "type": "image",
+                "key": "crate_03"
+            },
+            {
+                "url": "assets/crate_04.png",
+                "type": "image",
+                "key": "crate_04"
+            },
+            {
+                "url": "assets/crate_05.png",
+                "type": "image",
+                "key": "crate_05"
+            },
+            {
+                "url": "assets/crate_06.png",
+                "type": "image",
+                "key": "crate_06"
+            },
+            {
+                "url": [
+                    "assets/explosion-audio.mp3"
+                ],
+                "type": "audio",
+                "key": "explosion-audio"
+            },
+            {
+                "url": "assets/explosion1.png",
+                "type": "image",
+                "key": "explosion1"
+            },
+            {
+                "url": "assets/explosion2.png",
+                "type": "image",
+                "key": "explosion2"
+            },
+            {
+                "url": "assets/explosion3.png",
+                "type": "image",
+                "key": "explosion3"
+            },
+            {
+                "url": "assets/map.json",
+                "type": "tilemapTiledJSON",
+                "key": "map"
+            },
+            {
+                "url": "assets/player_01.png",
+                "type": "image",
+                "key": "player_01"
+            },
+            {
+                "url": "assets/player_02.png",
+                "type": "image",
+                "key": "player_02"
+            },
+            {
+                "url": "assets/player_03.png",
+                "type": "image",
+                "key": "player_03"
+            },
+            {
+                "url": "assets/player_04.png",
+                "type": "image",
+                "key": "player_04"
+            },
+            {
+                "url": "assets/player_05.png",
+                "type": "image",
+                "key": "player_05"
+            },
+            {
+                "url": "assets/player_06.png",
+                "type": "image",
+                "key": "player_06"
+            },
+            {
+                "url": "assets/player_07.png",
+                "type": "image",
+                "key": "player_07"
+            },
+            {
+                "url": "assets/player_08.png",
+                "type": "image",
+                "key": "player_08"
+            },
+            {
+                "url": "assets/player_09.png",
+                "type": "image",
+                "key": "player_09"
+            },
+            {
+                "url": "assets/player_10.png",
+                "type": "image",
+                "key": "player_10"
+            },
+            {
+                "url": "assets/player_11.png",
+                "type": "image",
+                "key": "player_11"
+            },
+            {
+                "url": "assets/player_12.png",
+                "type": "image",
+                "key": "player_12"
+            },
+            {
+                "url": "assets/player_13.png",
+                "type": "image",
+                "key": "player_13"
+            },
+            {
+                "url": "assets/player_14.png",
+                "type": "image",
+                "key": "player_14"
+            },
+            {
+                "url": "assets/player_15.png",
+                "type": "image",
+                "key": "player_15"
+            },
+            {
+                "url": "assets/player_16.png",
+                "type": "image",
+                "key": "player_16"
+            },
+            {
+                "url": "assets/player_17.png",
+                "type": "image",
+                "key": "player_17"
+            },
+            {
+                "url": "assets/player_18.png",
+                "type": "image",
+                "key": "player_18"
+            },
+            {
+                "url": "assets/player_19.png",
+                "type": "image",
+                "key": "player_19"
+            },
+            {
+                "url": "assets/player_20.png",
+                "type": "image",
+                "key": "player_20"
+            },
+            {
+                "url": "assets/player_21.png",
+                "type": "image",
+                "key": "player_21"
+            },
+            {
+                "url": "assets/player_22.png",
+                "type": "image",
+                "key": "player_22"
+            },
+            {
+                "url": "assets/player_23.png",
+                "type": "image",
+                "key": "player_23"
+            },
+            {
+                "url": "assets/player_24.png",
+                "type": "image",
+                "key": "player_24"
+            },
+            {
+                "url": "assets/player-animations.json",
+                "type": "animation",
+                "key": "player-animations"
+            },
+            {
+                "url": "assets/ship_1.png",
+                "type": "image",
+                "key": "ship_1"
+            },
+            {
+                "url": "assets/ship_2.png",
+                "type": "image",
+                "key": "ship_2"
+            },
+            {
+                "url": "assets/ship_3.png",
+                "type": "image",
+                "key": "ship_3"
+            },
+            {
+                "url": "assets/ship_4.png",
+                "type": "image",
+                "key": "ship_4"
+            },
+            {
+                "url": "assets/ship_5.png",
+                "type": "image",
+                "key": "ship_5"
+            },
+            {
+                "url": "assets/ship_6.png",
+                "type": "image",
+                "key": "ship_6"
+            },
+            {
+                "url": "assets/tileset.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "tileset"
+            },
+            {
+                "url": "assets/tileset-extruded.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "tileset-extruded"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

@@ -1,0 +1,228 @@
+{
+    "id": "fe9dec0b-9530-4ff6-a5a1-14fb1c57bb41",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Game",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "TilemapLayer",
+            "id": "f3cba290-cbcd-455e-bc43-e82b7aa14ab0",
+            "label": "worldLayer",
+            "displayName": "World Layer",
+            "scope": "CLASS",
+            "tilemapId": "178527e2-7597-4457-be48-37a5d32b3470",
+            "layerName": "Water",
+            "tilesets": [
+                "pirate-tileset"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "5b97cac4-a436-4310-a28a-dc04228fff52",
+            "label": "groundLayer",
+            "scope": "CLASS",
+            "y": -4,
+            "tilemapId": "178527e2-7597-4457-be48-37a5d32b3470",
+            "layerName": "Ground",
+            "tilesets": [
+                "pirate-tileset"
+            ]
+        },
+        {
+            "prefabId": "bc44add9-9de6-474c-a3e7-2fabef2fc4b3",
+            "id": "ca3bb490-bf51-4f4e-ab41-7f3375aa9018",
+            "unlock": [
+                "x",
+                "y",
+                "pushable"
+            ],
+            "label": "ship",
+            "x": 134,
+            "y": 733,
+            "pushable": false
+        },
+        {
+            "prefabId": "bc44add9-9de6-474c-a3e7-2fabef2fc4b3",
+            "id": "6cc47eb0-c3e8-4bbb-886f-3d6745b3e92b",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "texture",
+                "pushable"
+            ],
+            "label": "ship_1",
+            "texture": {
+                "key": "ship_2"
+            },
+            "x": 650,
+            "y": 1180,
+            "angle": 90,
+            "pushable": false
+        },
+        {
+            "prefabId": "bc44add9-9de6-474c-a3e7-2fabef2fc4b3",
+            "id": "3bfe008f-60e4-4649-9e3c-fb2287e9ed81",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "texture",
+                "pushable"
+            ],
+            "label": "ship_2",
+            "texture": {
+                "key": "ship_2"
+            },
+            "x": 378,
+            "y": 1090,
+            "angle": 90,
+            "pushable": false
+        },
+        {
+            "prefabId": "bc44add9-9de6-474c-a3e7-2fabef2fc4b3",
+            "id": "946fef05-ca79-4bd1-bb62-4987a8aceeea",
+            "unlock": [
+                "x",
+                "y",
+                "texture",
+                "angle",
+                "collideWorldBounds"
+            ],
+            "label": "player",
+            "displayName": "player",
+            "scope": "CLASS",
+            "components": [
+                "Movement"
+            ],
+            "Movement.speed": 200,
+            "texture": {
+                "key": "ship_4"
+            },
+            "x": 597,
+            "y": 314,
+            "angle": 0,
+            "collideWorldBounds": true
+        },
+        {
+            "prefabId": "bc44add9-9de6-474c-a3e7-2fabef2fc4b3",
+            "id": "d179ace8-80fe-4145-b165-90ab64d5c72a",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "texture",
+                "pushable"
+            ],
+            "label": "ship_3",
+            "texture": {
+                "key": "ship_2"
+            },
+            "x": 1053.9580985368352,
+            "y": 1042.985606196969,
+            "angle": -180,
+            "pushable": false
+        },
+        {
+            "prefabId": "bc44add9-9de6-474c-a3e7-2fabef2fc4b3",
+            "id": "1984859a-d0b3-4f2b-a338-f0d3fac6b176",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "texture",
+                "pushable"
+            ],
+            "label": "ship_4",
+            "texture": {
+                "key": "ship_2"
+            },
+            "x": 1630,
+            "y": 518,
+            "angle": -180,
+            "pushable": false
+        },
+        {
+            "prefabId": "bc44add9-9de6-474c-a3e7-2fabef2fc4b3",
+            "id": "4ec51911-0f87-44ad-8b74-a43c7684ffb7",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "texture",
+                "pushable"
+            ],
+            "label": "ship_5",
+            "texture": {
+                "key": "ship_2"
+            },
+            "x": 1839.9607814047126,
+            "y": 397.8071466715946,
+            "angle": -180,
+            "pushable": false
+        },
+        {
+            "prefabId": "bc44add9-9de6-474c-a3e7-2fabef2fc4b3",
+            "id": "4ce9eca9-3fdd-4c85-bff4-8190ac2adb84",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "texture",
+                "pushable"
+            ],
+            "label": "ship_6",
+            "texture": {
+                "key": "ship_2"
+            },
+            "x": 1258,
+            "y": 188,
+            "angle": -180,
+            "pushable": false
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "178527e2-7597-4457-be48-37a5d32b3470",
+            "type": "Tilemap",
+            "label": "map",
+            "scope": "LOCAL",
+            "key": "map",
+            "tilesets": [
+                {
+                    "name": "pirate-tileset",
+                    "imageKey": "tileset"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "lists": [
+        {
+            "id": "ae72dbf5-3ddb-44d5-aefe-88e546f72d4d",
+            "label": "enemies",
+            "objectIds": [
+                "ca3bb490-bf51-4f4e-ab41-7f3375aa9018",
+                "3bfe008f-60e4-4649-9e3c-fb2287e9ed81",
+                "6cc47eb0-c3e8-4bbb-886f-3d6745b3e92b",
+                "4ce9eca9-3fdd-4c85-bff4-8190ac2adb84",
+                "1984859a-d0b3-4f2b-a338-f0d3fac6b176",
+                "4ec51911-0f87-44ad-8b74-a43c7684ffb7",
+                "d179ace8-80fe-4145-b165-90ab64d5c72a"
+            ]
+        }
+    ]
+}
