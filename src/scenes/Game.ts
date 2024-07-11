@@ -1,10 +1,10 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import Ship from "../prefabs/Ship";
 import Movement from "../components/Movement";
+import Ship from "../prefabs/Ship";
 /* START-USER-IMPORTS */
-import DepthSortY from "../components/DepthSortY";
+import Enemy from "../prefabs/Enemy";
 /* END-USER-IMPORTS */
 
 export default class Game extends Phaser.Scene {
@@ -28,18 +28,18 @@ export default class Game extends Phaser.Scene {
     const groundLayer = map.createLayer("Ground", ["pirate-tileset"], 0, -4)!;
 
     // ship
-    const ship = new Ship(this, 134, 733);
+    const ship = new Enemy(this, 134, 733);
     this.add.existing(ship);
     ship.body.pushable = false;
 
     // ship_1
-    const ship_1 = new Ship(this, 650, 1180, "ship_2");
+    const ship_1 = new Enemy(this, 650, 1180, "ship_2");
     this.add.existing(ship_1);
     ship_1.angle = 90;
     ship_1.body.pushable = false;
 
     // ship_2
-    const ship_2 = new Ship(this, 378, 1090, "ship_2");
+    const ship_2 = new Enemy(this, 378, 1090, "ship_2");
     this.add.existing(ship_2);
     ship_2.angle = 90;
     ship_2.body.pushable = false;
@@ -48,28 +48,27 @@ export default class Game extends Phaser.Scene {
     const player = new Ship(this, 597, 314, "ship_4");
     this.add.existing(player);
     player.angle = 0;
-    player.body.collideWorldBounds = true;
 
     // ship_3
-    const ship_3 = new Ship(this, 1053.9580985368352, 1042.985606196969, "ship_2");
+    const ship_3 = new Enemy(this, 1053.9580985368352, 1042.985606196969, "ship_2");
     this.add.existing(ship_3);
     ship_3.angle = -180;
     ship_3.body.pushable = false;
 
     // ship_4
-    const ship_4 = new Ship(this, 1630, 518, "ship_2");
+    const ship_4 = new Enemy(this, 1630, 518, "ship_2");
     this.add.existing(ship_4);
     ship_4.angle = -180;
     ship_4.body.pushable = false;
 
     // ship_5
-    const ship_5 = new Ship(this, 1839.9607814047126, 397.8071466715946, "ship_2");
+    const ship_5 = new Enemy(this, 1839.9607814047126, 397.8071466715946, "ship_2");
     this.add.existing(ship_5);
     ship_5.angle = -180;
     ship_5.body.pushable = false;
 
     // ship_6
-    const ship_6 = new Ship(this, 1258, 188, "ship_2");
+    const ship_6 = new Enemy(this, 1258, 188, "ship_2");
     this.add.existing(ship_6);
     ship_6.angle = -180;
     ship_6.body.pushable = false;
@@ -122,6 +121,8 @@ export default class Game extends Phaser.Scene {
 
     this.physics.add.collider(this.player, this.enemies);
     this.physics.add.collider(this.player, this.groundLayer);
+    this.physics.add.collider(this.enemies, this.groundLayer);
+    this.physics.add.collider(this.enemies, this.enemies);
 
     this.time.addEvent({
       delay: 1000,
@@ -154,17 +155,6 @@ export default class Game extends Phaser.Scene {
       // @ts-ignore
       this.physics.add.overlap(this.cannonBall, this.enemies, this.destroy, undefined, this);
     }
-
-    // //check world bounds
-    // if (
-    //   !this.cannonBall ||
-    //   this.cannonBall.x > worldBounds.width ||
-    //   this.cannonBall.y > worldBounds.height ||
-    //   this.cannonBall.x < 0 ||
-    //   this.cannonBall.y < 0
-    // ) {
-    //   this.control = false;
-    // }
   }
 
   //collide cannonbal and pirateShip
